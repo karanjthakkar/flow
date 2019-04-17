@@ -16,4 +16,4 @@ babelConfig.presets = babelConfig.presets.map(function(p) {
 });
 
 require("babel-register")(babelConfig);
-require("../src/main.js").run();
+require("../dist/main.js").run();

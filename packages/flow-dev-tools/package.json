@@ -1,8 +1,14 @@
 {
   "name": "flow-dev-tools",
-  "private": true,
   "license": "MIT",
   "version": "0.1.0",
+  "bin": {
+    "flow-tool": "./bin/tool"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
   "dependencies": {
     "babel-jest": "^21.0.2",
     "babel-plugin-syntax-async-functions": "^6.8.0",
@@ -49,5 +55,8 @@
   },
   "scripts": {
     "test": "make -C ../.. test"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
